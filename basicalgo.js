@@ -110,7 +110,7 @@ function greaterThanY(arr, y) {
     }
     return count;
 }
-q = [1, 2, 3, 4, 5]
+var q = [1, 2, 3, 4, 5]
 
 console.log(greaterThanY(q, 1));
 console.log('=======================');
@@ -168,7 +168,7 @@ function squareValues(arr) {
 
 }
 
-n = [2, 3, 4, 5]
+var n = [2, 3, 4, 5]
 
 console.log(squareValues(n));
 
@@ -204,7 +204,7 @@ function zeroOutNegs(arr) {
 
 }
 
-h = [1, -2, 3, -4, 5, -6]
+var h = [1, -2, 3, -4, 5, -6]
 
 console.log(zeroOutNegs(h));
 
@@ -239,8 +239,7 @@ function shiftArrayVals(arr) {
     return arr;
 
 }
-
-o = [4, 3, 7, 8, 4]
+var o = [4, 3, 7, 8, 4]
 
 console.log(shiftArrayVals(o));
 
@@ -275,7 +274,7 @@ function swapNegsWithString(arr) {
 
 }
 
-r = [1, 2, -4, 4, 5, -6]
+var r = [1, 2, -4, 4, 5, -6]
 
 console.log(swapNegsWithString(r));
 
@@ -306,8 +305,7 @@ function push(arr, value) {
     // * By method definition return value is inserted value
 
 }
-
-p = [1, 2, 3, 4]
+var p = [1, 2, 3, 4]
 
 console.log(push(p, 5));
 
@@ -340,8 +338,7 @@ function pop(arr) {
     // * By method definition return value is popped value
 
 }
-
-b = [1, 2, 3, 4, 5]
+ var b = [1, 2, 3, 4, 5]
 
 console.log(pop(b));
 
