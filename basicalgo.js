@@ -400,56 +400,30 @@ console.log('=======================');
 
 
 function bubbleSort(arr) {
-
-    if (arr.length === 0) {
-
-        return 'Array is empty'
-
-    }
+    if (arr.length === 0) {    return 'Array is empty'     }
 
     let unsorted = true;
-
     while (unsorted === true) {
-
         let count = 0;
-
         for (let i = 0; i < arr.length; i++) {
-
-            if (arr[i] > arr[i + 1]) { // Flip sign for descending
-
+            if (arr[i] > arr[i + 1]) { 
                 let temp = 0;
-
                 temp = arr[i];
-
                 arr[i] = arr[i + 1];
-
                 arr[i + 1] = temp;
-
             }
-
-            else {
-
-                count++;
-
-            }
+            else { count++;  }
 
         }
 
-        if (count === arr.length) {
-
-            unsorted = false;
-
-        }
-
+        if (count === arr.length) {  unsorted = false;   }
     }
-
     return arr;
-
 }
 
-y = [9, -3, 6, -1, 3, 6]
+var d= [9, -3, 6, -1, 3, 6]
 
-console.log(bubbleSort(y));
+console.log(bubbleSort(d));
 
 
 
