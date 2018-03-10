@@ -460,46 +460,24 @@ console.log('=======================');
 // Array Bubble Sort Recursively (Ascending)
 
 
-
 function bubbleSortRec(arr) {
 
-    if (arr.length === 0) {
-
-        return 'Array is empty'
-
-    }
-
-    let swapped = false;
-
-    for (let i = 0; i < arr.length; i++) {
-
+    if (arr.length === 0) { return 'Array is empty'   }
+      for (let i = 0; i < arr.length; i++) {
         if (arr[i] > arr[i + 1]) {
-
             let temp = 0;
-
             temp = arr[i]
-
             arr[i] = arr[i + 1]
-
             arr[i + 1] = temp;
-
-            swapped = true;
-
+            
         }
 
     }
-
-    if (swapped) {
-
-        bubbleSortRec(arr);
-
-    }
-
+    
     return arr;
-
 }
 
-d = [9, -3, 6, -1, 3, 6]
+var d = [9, -3, 6, -1, 3, 6]
 
 console.log(bubbleSortRec(d));
 
