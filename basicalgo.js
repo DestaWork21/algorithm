@@ -91,10 +91,7 @@ function arrayAverage(arr) {
     }
     return (sum / arr.length);
 }
-
 console.log(arrayAverage([5, 10, 15, 20, 60]));
-
-
 
 console.log('=======================');
 
@@ -105,94 +102,53 @@ console.log('=======================');
 
 
 function greaterThanY(arr, y) {
-
     var count = 0;
-
     for (var i = 0; i < arr.length; i++) {
-
         if (arr[i] > y) {
-
             count++;
-
         }
-
     }
-
     return count;
-
 }
-
 q = [1, 2, 3, 4, 5]
 
 console.log(greaterThanY(q, 1));
-
-
-
 console.log('=======================');
-
-
 
 // 8. Max, Min, Average
 
-
-
 function minMaxAvg(arr) {
-
-    if (arr.length === 0) {
-
-        return 'Array is empty'
-
-    }
-
-    var min = max = arr[0]; // Syntax for assigning multiple variables to one value
-
-    // var min = arr[0];
-
-    // var max = arr[0];
-
+    if (arr.length === 0) {  return 'Array is empty'   }
+    var Avg= arr[0]; 
+    var min = arr[0];
+    var max = arr[0];
     var sum = 0;
-
     for (var i = 0; i < arr.length; i++) {
-
         if (arr[i] < min) {
-
             min = arr[i]
-
         }
-
         if (arr[i] > max) {
-
             max = arr[i]
-
         }
-
         sum += arr[i]
 
     }
-
     // return [ max, min, sum / arr.length ]
 
-    console.log('Max ', max);
+    console.log('Max: ', max);
 
-    console.log('Min ', min);
+    console.log('Min: ', min);
 
-    console.log('Avg ', sum / arr.length);
+    console.log('Avg:', sum / arr.length);
 
 }
 
-minMaxAvg([1, 2, 3, 4])
+minMaxAvg([10, 20, 30, 40])
 
 // console.log(minMaxAvg([1, 2, 3, 4]));
-
-
-
 console.log('=======================');
 
-
-
 // 9. Square the Values
-
-
 
 function squareValues(arr) {
 
